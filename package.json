@@ -2,7 +2,7 @@
   "name": "events_attending",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://antunishdpursuit.github.io/events_attending/",
+  "homepage": "https://soyUnaGata.github.io/events_attending/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
