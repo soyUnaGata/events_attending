@@ -19,7 +19,6 @@ function App() {
       <Router>
         <NavBar />
         <main>
-          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/users" element={<Index />} />
             <Route path="/users/new" element={<New />} />
@@ -27,7 +26,6 @@ function App() {
             <Route path="/users/:id/edit" element={<Edit />} />
             <Route path="/about" element={<About/>} />
             <Route path="*" element={<Error />} />
-          </Routes>
         </main>
         <Footer />
       </Router>
