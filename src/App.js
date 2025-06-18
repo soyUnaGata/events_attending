@@ -13,24 +13,25 @@ import Show from "./Pages/Show";
 import NavBar from "./Components/Organization/NavBar";
 import About from "./Components/Organization/About"
 import Footer from "./Components/Organization/Footer";
+
 function App() {
-  return (
-    <div className="App">
-      <Router>
-        <NavBar />
-        <main>
-            <Route path="/" element={<Home />} />
-            <Route path="/users" element={<Index />} />
-            <Route path="/users/new" element={<New />} />
-            <Route exact path="/users/:id" element={<Show />} />
-            <Route path="/users/:id/edit" element={<Edit />} />
-            <Route path="/about" element={<About/>} />
-            <Route path="*" element={<Error />} />
-        </main>
-        <Footer />
-      </Router>
-    </div>
-  );
+    return (
+        <div className="App">
+            <NavBar />
+            <main>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/users" element={<Index />} />
+                    <Route path="/users/new" element={<New />} />
+                    <Route path="/users/:id" element={<Show />} />
+                    <Route path="/users/:id/edit" element={<Edit />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="*" element={<Error />} />
+                </Routes>
+            </main>
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
